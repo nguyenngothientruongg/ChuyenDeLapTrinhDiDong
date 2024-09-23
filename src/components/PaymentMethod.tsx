@@ -9,13 +9,7 @@ import {
   SPACING,
 } from '../theme/theme';
 import CustomIcon from './CustomIcon';
-
-interface PaymentMethodProps {
-  paymentMode: string;
-  name: string;
-  icon: any;
-  isIcon: boolean;
-}
+import {PaymentMethodProps} from '../interface/PaymentMethodProps';
 
 const PaymentMethod: React.FC<PaymentMethodProps> = ({
   paymentMode,
@@ -42,7 +36,7 @@ const PaymentMethod: React.FC<PaymentMethodProps> = ({
           style={styles.LinearGradientWallet}>
           <View style={styles.WalletRow}>
             <CustomIcon
-              name={'wallet'}
+              name={'credit-card'}
               color={COLORS.primaryOrangeHex}
               size={FONTSIZE.size_30}
             />

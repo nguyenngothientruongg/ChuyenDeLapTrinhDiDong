@@ -1,12 +1,8 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import LottieView from 'lottie-react-native';
 import {COLORS} from '../theme/theme';
-
-interface PopUpAnimationProps {
-  style: any;
-  source: any;
-}
+import {PopUpAnimationProps} from '../interface/PopUpAnimationProps';
 
 const PopUpAnimation: React.FC<PopUpAnimationProps> = ({style, source}) => {
   return (

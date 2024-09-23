@@ -7,17 +7,7 @@ import {
   FONTSIZE,
   SPACING,
 } from '../theme/theme';
-
-interface PriceProps {
-  price: string;
-  currency: string;
-}
-
-interface PaymentFooterProps {
-  price: PriceProps;
-  buttonPressHandler: any;
-  buttonTitle: string;
-}
+import {PaymentFooterProps} from '../interface/PaymentFooterProps';
 
 const PaymentFooter: React.FC<PaymentFooterProps> = ({
   price,

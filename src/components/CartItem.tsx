@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  ImageProps,
-  Image,
-  TouchableOpacity,
-} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {
   BORDERRADIUS,
@@ -16,18 +9,7 @@ import {
   SPACING,
 } from '../theme/theme';
 import CustomIcon from './CustomIcon';
-
-interface CartItemProps {
-  id: string;
-  name: string;
-  imagelink_square: ImageProps;
-  special_ingredient: string;
-  roasted: string;
-  prices: any;
-  type: string;
-  incrementCartItemQuantityHandler: any;
-  decrementCartItemQuantityHandler: any;
-}
+import {CartItemProps} from '../interface/CartItemProps';
 
 const CartItem: React.FC<CartItemProps> = ({
   id,
@@ -107,7 +89,7 @@ const CartItem: React.FC<CartItemProps> = ({
                     incrementCartItemQuantityHandler(id, data.size);
                   }}>
                   <CustomIcon
-                    name="add"
+                    name="plus"
                     color={COLORS.primaryWhiteHex}
                     size={FONTSIZE.size_10}
                   />
@@ -174,7 +156,7 @@ const CartItem: React.FC<CartItemProps> = ({
                   incrementCartItemQuantityHandler(id, prices[0].size);
                 }}>
                 <CustomIcon
-                  name="add"
+                  name="plus"
                   color={COLORS.primaryWhiteHex}
                   size={FONTSIZE.size_10}
                 />

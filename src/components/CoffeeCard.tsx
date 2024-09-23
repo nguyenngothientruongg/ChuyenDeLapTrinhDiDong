@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Dimensions,
   ImageBackground,
-  ImageProps,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -21,18 +20,7 @@ import BGIcon from './BGIcon';
 
 const CARD_WIDTH = Dimensions.get('window').width * 0.32;
 
-interface CoffeeCardProps {
-  id: string;
-  index: number;
-  type: string;
-  roasted: string;
-  imagelink_square: ImageProps;
-  name: string;
-  special_ingredient: string;
-  average_rating: number;
-  price: any;
-  buttonPressHandler: any;
-}
+import {CoffeeCardProps} from '../interface/CoffeeCardProps';
 
 const CoffeeCard: React.FC<CoffeeCardProps> = ({
   id,
@@ -58,7 +46,7 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({
         resizeMode="cover">
         <View style={styles.CardRatingContainer}>
           <CustomIcon
-            name={'star'}
+            name={'star-full'}
             color={COLORS.primaryOrangeHex}
             size={FONTSIZE.size_16}
           />
@@ -86,7 +74,7 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({
           }}>
           <BGIcon
             color={COLORS.primaryWhiteHex}
-            name={'add'}
+            name={'plus'}
             BGColor={COLORS.primaryOrangeHex}
             size={FONTSIZE.size_10}
           />

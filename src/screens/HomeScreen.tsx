@@ -131,7 +131,8 @@ const HomeScreen = ({navigation}: any) => {
         <HeaderBar />
 
         <Text style={styles.ScreenTitle}>
-          Find the best{'\n'}coffee for you
+          {'\n'}
+          Coffe wukong
         </Text>
 
         {/* Search Input */}
@@ -169,7 +170,7 @@ const HomeScreen = ({navigation}: any) => {
               }}>
               <CustomIcon
                 style={styles.InputIcon}
-                name="close"
+                name="cross"
                 size={FONTSIZE.size_16}
                 color={COLORS.primaryLightGreyHex}
               />
@@ -314,7 +315,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   ScreenTitle: {
-    fontSize: FONTSIZE.size_28,
+    fontSize: FONTSIZE.size_16,
     fontFamily: FONTFAMILY.poppins_semibold,
     color: COLORS.primaryWhiteHex,
     paddingLeft: SPACING.space_30,

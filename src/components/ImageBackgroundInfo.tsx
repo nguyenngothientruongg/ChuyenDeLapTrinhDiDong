@@ -3,7 +3,6 @@ import {
   StyleSheet,
   Text,
   View,
-  ImageProps,
   TouchableOpacity,
   ImageBackground,
 } from 'react-native';
@@ -16,22 +15,7 @@ import {
   SPACING,
 } from '../theme/theme';
 import CustomIcon from './CustomIcon';
-
-interface ImageBackgroundInfoProps {
-  EnableBackHandler: boolean;
-  imagelink_portrait: ImageProps;
-  type: string;
-  id: string;
-  favourite: boolean;
-  name: string;
-  special_ingredient: string;
-  ingredients: string;
-  average_rating: number;
-  ratings_count: string;
-  roasted: string;
-  BackHandler?: any;
-  ToggleFavourite: any;
-}
+import {ImageBackgroundInfoProps} from '../interface/ImageBackgroundInfoProps';
 
 const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
   EnableBackHandler,
@@ -137,7 +121,7 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
             <View style={styles.InfoContainerRow}>
               <View style={styles.RatingContainer}>
                 <CustomIcon
-                  name={'star'}
+                  name={'star-full'}
                   color={COLORS.primaryOrangeHex}
                   size={FONTSIZE.size_20}
                 />

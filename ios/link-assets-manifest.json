@@ -18,6 +18,10 @@
       "sha1": "039fbff59306d5e4300ef7614d796844345575af"
     },
     {
+      "path": "src/assets/app_images/image.png",
+      "sha1": "ee60674b066b40a0eb31cdb188cf71c86e5ca5ee"
+    },
+    {
       "path": "src/assets/coffee_assets/americano/portrait/americano_pic_1_portrait.png",
       "sha1": "685f99c5602e8692061e11137b4b0c94b6f92c0c"
     },
@@ -198,6 +202,10 @@
       "sha1": "18e5fe2f93c853bbb495975f04df56438d595de5"
     },
     {
+      "path": "src/assets/fonts/icomoon.ttf",
+      "sha1": "d7a82015cc09207b60e31e823721960dae823247"
+    },
+    {
       "path": "src/assets/fonts/Poppins-Black.ttf",
       "sha1": "645e04c53c6b5b35bce654a811ebce16af8aa721"
     },
@@ -232,6 +240,10 @@
     {
       "path": "src/assets/fonts/Poppins-Thin.ttf",
       "sha1": "09ba4dcd5509c8085bf88c665dcc51cbdfced27b"
+    },
+    {
+      "path": "src/assets/fonts/setting.ttf",
+      "sha1": "73f06dcefa217ea3c56d7995b8856ee384e4a4fa"
     }
   ]
 }

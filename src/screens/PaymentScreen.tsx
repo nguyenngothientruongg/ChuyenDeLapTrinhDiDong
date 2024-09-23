@@ -119,12 +119,12 @@ const PaymentScreen = ({navigation, route}: any) => {
                   colors={[COLORS.primaryGreyHex, COLORS.primaryBlackHex]}>
                   <View style={styles.CreditCardRow}>
                     <CustomIcon
-                      name="chip"
+                      name="credit-card"
                       size={FONTSIZE.size_20 * 2}
                       color={COLORS.primaryOrangeHex}
                     />
                     <CustomIcon
-                      name="visa"
+                      name="credit-card"
                       size={FONTSIZE.size_30 * 2}
                       color={COLORS.primaryWhiteHex}
                     />

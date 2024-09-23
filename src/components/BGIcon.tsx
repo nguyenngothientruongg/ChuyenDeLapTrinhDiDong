@@ -1,14 +1,9 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import {BORDERRADIUS, SPACING} from '../theme/theme';
 import CustomIcon from './CustomIcon';
 
-interface BGIconProps {
-  name: string;
-  color: string;
-  size: number;
-  BGColor: string;
-}
+import {BGIconProps} from '../interface/BGIconProps';
 
 const BGIcon: React.FC<BGIconProps> = ({name, color, size, BGColor}) => {
   return (

@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, ImageProps, Image} from 'react-native';
+import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import {
@@ -8,15 +8,7 @@ import {
   FONTSIZE,
   SPACING,
 } from '../theme/theme';
-
-interface OrderItemCardProps {
-  type: string;
-  name: string;
-  imagelink_square: ImageProps;
-  special_ingredient: string;
-  prices: any;
-  ItemPrice: string;
-}
+import {OrderItemCardProps} from '../interface/OrderItemCardProps';
 
 const OrderItemCard: React.FC<OrderItemCardProps> = ({
   type,

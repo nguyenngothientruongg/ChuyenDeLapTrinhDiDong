@@ -3,10 +3,7 @@ import React from 'react';
 import {COLORS, FONTFAMILY, FONTSIZE, SPACING} from '../theme/theme';
 import GradientBGIcon from './GradientBGIcon';
 import ProfilePic from './ProfilePic';
-
-interface HeaderBarProps {
-  title?: string;
-}
+import {HeaderBarProps} from '../interface/HeaderBarProps';
 
 const HeaderBar: React.FC<HeaderBarProps> = ({title}) => {
   return (

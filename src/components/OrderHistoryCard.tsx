@@ -1,19 +1,9 @@
-import {
-  StyleSheet,
-  Text,
-  Touchable,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import {COLORS, FONTFAMILY, FONTSIZE, SPACING} from '../theme/theme';
 import OrderItemCard from './OrderItemCard';
-interface OrderHistoryCardProps {
-  navigationHandler: any;
-  CartList: any;
-  CartListPrice: string;
-  OrderDate: string;
-}
+import {OrderHistoryCardProps} from '../interface/OrderHistoryCardProps';
+
 const OrderHistoryCard: React.FC<OrderHistoryCardProps> = ({
   navigationHandler,
   CartList,
